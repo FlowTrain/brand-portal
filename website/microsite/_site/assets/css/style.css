@@ -1,0 +1,8 @@
+/* Flow Train — Dark Mode CSS for GitHub Pages (Jekyll Minima) */
+:root { --ft-blue:#2BAEE4; --ft-black:#231F20; --ft-text:#E6F4FA; --ft-border:#3A3536; }
+html,body{background:var(--ft-black)!important;color:var(--ft-text)!important}
+a{color:var(--ft-blue)}a:hover,a:focus{color:#58C7F0;text-decoration:underline}
+h1,h2,h3,h4{color:var(--ft-text)}
+pre,code{background:#2B2A2B!important;color:var(--ft-text)!important;border:1px solid var(--ft-border)}
+.site-header,.site-footer,.page-header{background:var(--ft-black)!important;border-color:var(--ft-border)!important}
+hr{border:none;border-top:1px solid var(--ft-border)}
