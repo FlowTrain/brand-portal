@@ -4,12 +4,12 @@
 **Release Date:** 2026-01-17
 
 ## ✨ Highlights
-- Production-ready microsite (dark mode, SVG-accurate wordmark)
-- Final brand banner (approved composition; +15% star-trail density)
+- Microsite (dark mode, SVG wordmark when available)
+- Brand banner (+15% star-trail density)
 - System themes (Windows/macOS) + docs kits (Notion/Confluence/GitHub)
-- Motion assets (splash/lockscreen MP4 + static fallbacks)
+- Motion assets (if provided)
 
-## 📦 What's Included
+## 📦 What’s Included
 - FlowTrain_Windows_ThemePack.zip
 - FlowTrain_macOS_Wallpapers.zip
 - FlowTrain_Cursor_Set.zip
@@ -28,9 +28,7 @@
 - FlowTrain_Microsite_Assets.7z
 
 ## 🔐 Checksums
-Refer to `SHA256SUMS.txt` attached to this release.
+See `SHA256SUMS.txt` attached.
 
 ## 🔮 Next (v1.0.2)
-- Font recommendations aligned to the wordmark
-- Ultrawide banner variants
-- Additional motion loops and microsite refinements
+- Fonts aligned to wordmark · Ultrawide banner · Motion refinements

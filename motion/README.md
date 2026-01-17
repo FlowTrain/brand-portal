@@ -1,1 +1,1 @@
-# Motion assets placeholder
+Motion assets placeholder
