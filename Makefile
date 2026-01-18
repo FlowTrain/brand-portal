@@ -82,7 +82,7 @@ prepare-dirs:
 
 define SAFE_ZIP
 	@if [ -d $(1) ]; then \
-	  cd $(1) && zip -r "../../$(2)" . ; \
+	  (cd $(1) && zip -r "$$(cd ..; pwd)/$(OUT_DIR)/$(notdir $(2))" . 2>/dev/null) || (cd $(1) && zip -r "../../$(2)" . ); \
 	else \
 	  echo "↷ $(1) missing – creating placeholder $(2)"; \
 	  echo "$(1) missing $(shell date -Iseconds)" > "$(OUT_DIR)/$(notdir $(2:.zip=.txt))"; \
@@ -139,6 +139,7 @@ notes-template: prepare-dirs
 	  echo ""; \
 	  echo "## 📦 What’s Included"; \
 	  for f in $(ZIP_FILES); do echo "- $$(basename "$$f")"; done; \
+	  for f in $(SEVENZ_FILES); do echo "- $$(basename "$$f")"; done; \
 	  echo ""; \
 	  echo "## 🔐 Checksums"; \
 	  echo "See \`$$(basename $(CHECKSUMS))\` attached."; \
@@ -223,6 +224,12 @@ update-downloads:
 	  cat "$(DOWNLOADS_MD)" "$$BLOCK_FILE" > "$$TMP_DIR/updated.md"; \
 	  cp "$$TMP_DIR/updated.md" "$(DOWNLOADS_MD)"; \
 	fi; rm -rf "$$TMP_DIR"; echo "✓ downloads.md updated."
+
+.PHONY: release
+release:
+	gh auth status >/dev/null || (echo "✗ gh not authenticated"; exit 1)
+	test -f "$(NOTES_FILE)" || (echo "✗ $(NOTES_FILE) required for release"; exit 1)
+	gh release create "$(TAG)" $(ZIP_FILES) $(SEVENZ_FILES) --repo "$(ORG)/$(REPO)" --title "$(TAG) — Microsite + System Assets" --notes-file "$(NOTES_FILE)" || (echo "✓ Release already exists or published"; true)
 
 .PHONY: pr-downloads
 pr-downloads:
