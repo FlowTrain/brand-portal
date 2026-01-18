@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="20%" stop-color="#5155a5"/><stop offset="100%" stop-color="#00b0f0"/></linearGradient></defs>
+  <rect width="1200" height="300" fill="none"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+        fill="url(#g)" font-family="Segoe UI, Roboto, Arial" font-size="120" letter-spacing="2">FlowTrain</text>
+</svg>
