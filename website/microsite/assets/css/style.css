@@ -1,9 +1,59 @@
 
 /* Flow Train — Dark Mode CSS for GitHub Pages (Jekyll Minima) */
-:root { --ft-blue:#2BAEE4; --ft-black:#231F20; --ft-text:#E6F4FA; --ft-border:#3A3536; }
+
+/* Brand Color Palette */
+:root {
+  /* Primary Colors */
+  --ft-blue: #2BAEE4;
+  --ft-purple: #5A4FCF;
+  --ft-black: #231F20;
+  
+  /* UI Colors */
+  --ft-text: #E6F4FA;
+  --ft-border: #3A3536;
+  
+  /* Gradient */
+  --ft-gradient-primary: linear-gradient(
+    135deg,
+    #2BAEE4 0%,
+    #3B8FCC 45%,
+    #5A4FCF 75%,
+    #231F20 100%
+  );
+}
 html,body{background:var(--ft-black)!important;color:var(--ft-text)!important}
 a{color:var(--ft-blue)}a:hover,a:focus{color:#58C7F0;text-decoration:underline}
 h1,h2,h3,h4{color:var(--ft-text)}
 pre,code{background:#2B2A2B!important;color:var(--ft-text)!important;border:1px solid var(--ft-border)}
 .site-header,.site-footer,.page-header{background:var(--ft-black)!important;border-color:var(--ft-border)!important}
 hr{border:none;border-top:1px solid var(--ft-border)}
+
+/* Logo & Wordmark Styling */
+.ft-logo,
+.ft-wordmark,
+.logo,
+.wordmark {
+  background: var(--ft-gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ft-gradient {
+  background: var(--ft-gradient-primary);
+}
+
+/* Banner with gradient overlay */
+.ft-banner {
+  background: var(--ft-gradient-primary);
+  position: relative;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(43, 174, 228, 0.2);
+}
+
+/* Accent elements */
+.ft-accent-blue { color: var(--ft-blue); }
+.ft-accent-purple { color: var(--ft-purple); }
+.ft-accent-black { color: var(--ft-black); }
+

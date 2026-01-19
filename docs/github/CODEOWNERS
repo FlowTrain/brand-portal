@@ -1,0 +1,25 @@
+# FlowTrain Code Owners
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Root-level files and default ownership
+* @FlowTrain/maintainers
+
+# Specific team ownership
+# (Customize these paths to match your project structure)
+
+# Microsite & branding
+website/microsite/              @FlowTrain/brand-team
+docs/                           @FlowTrain/docs-team
+branding/                       @FlowTrain/brand-team
+
+# Workflows & config
+.github/                        @FlowTrain/maintainers
+Makefile                        @FlowTrain/maintainers
+
+# Documentation
+README.md                       @FlowTrain/docs-team
+CONTRIBUTING.md                 @FlowTrain/maintainers
+RELEASE*.md                     @FlowTrain/maintainers
+
+# Scripts & tooling
+scripts/                        @FlowTrain/maintainers

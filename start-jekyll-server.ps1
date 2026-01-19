@@ -14,6 +14,13 @@ bundle install
 
 # Start the Jekyll server
 Write-Host "Starting Jekyll server..." -ForegroundColor Green
+Write-Host ""
+Write-Host "===============================================" -ForegroundColor Cyan
+Write-Host "Jekyll will be available at:" -ForegroundColor Cyan
+Write-Host "  http://localhost:4000" -ForegroundColor Yellow
+Write-Host "===============================================" -ForegroundColor Cyan
+Write-Host ""
+
 bundle exec jekyll serve @("--watch", "--incremental")
 
 Pop-Location

@@ -1,2 +1,10 @@
 title: Flow Train Brand Portal
 markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+include:
+  - .gitkeep
+keep_files:
+  - assets
