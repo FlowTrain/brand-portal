@@ -70,17 +70,10 @@ ensure_dir branding/exports
 ensure_dir branding/logo/svg
 
 # 2) Map your existing layout → canonical ------------------------
-# Your screenshot shows 'system' and 'doc' at top-level.
-
 # System → themes/cursors
 move_all_contents "system/windows"      "themes/windows"      "system/windows"
 move_all_contents "system/macos"        "themes/macos"        "system/macos"
 move_all_contents "system/windows/cursors" "cursors/windows"  "system/windows/cursors"
-
-# Docs → docs/*
-move_all_contents "doc/notion"          "docs/notion"         "doc/notion"
-move_all_contents "doc/confluence"      "docs/confluence"     "doc/confluence"
-move_all_contents "doc/github"          "docs/github"         "doc/github"
 
 # Motion (optional)
 move_all_contents "motion"              "motion"              "motion"
