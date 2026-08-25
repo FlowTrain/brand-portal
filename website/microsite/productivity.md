@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Productivity & Tools
@@ -15,4 +14,4 @@ Apply the Flow Train dark theme JSON.
 ## Teams Backgrounds
 Use branded backgrounds for calls.
 
-[Next: Training Themes →](training-themes.md)
+[Next: Training Themes →](./training-themes.html)

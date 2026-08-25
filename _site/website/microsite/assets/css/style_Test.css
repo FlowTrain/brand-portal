@@ -1,0 +1,16 @@
+
+:root {
+  --ft-blue: #2BAEE4;
+  --ft-purple: #5A4FCF;
+  --ft-charcoal: #2A2A2B;
+  --ft-text: #E6F4FA;
+
+  --ft-gradient-primary: linear-gradient(
+    135deg,
+    #2BAEE4 0%,
+    #3B8FCC 45%,
+    #5A4FCF 75%,
+    #2A2A2B 100%
+  );
+}
+

@@ -16,4 +16,4 @@ Use the master logo and approved variations only. Maintain clear space equal to 
 - Headings: Inter Bold
 - Body: Inter Regular
 
-[Next: Motion & Visual Language →](motion.md)
+[Next: Motion & Visual Language →](./motion.html)
