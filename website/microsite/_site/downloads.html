@@ -10,16 +10,29 @@
   <!-- Banner -->
   <div class="ft-banner">
     <div class="ft-banner-content">
-      <img src="/assets/banner-dark.png" alt="FlowTrain" style="max-width: 100%; height: auto;">
+      <img src="/assets/banner-dark.png" alt="FlowTrain">
+      <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; z-index: 2; position: relative;">
+        <svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#2BAEE4;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#5A4FCF;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="48" fill="url(#logoGradient)" opacity="0.2"/>
+          <text x="50" y="55" font-size="32" font-weight="bold" text-anchor="middle" fill="#2BAEE4" font-family="Arial">FT</text>
+        </svg>
+        <span style="font-size: 2rem; color: var(--ft-text);">FlowTrain</span>
+      </div>
     </div>
   </div>
 
   <!-- Navigation -->
   <nav class="site-nav">
-    <a href="/">Home</a>
-    <a href="/brand-foundations.html">Brand</a>
-    <a href="/downloads.html">Downloads</a>
-    <a href="/training-themes.html">Training</a>
+    <a href="./">Home</a>
+    <a href="./brand-foundations.html">Brand</a>
+    <a href="./downloads.html">Downloads</a>
+    <a href="./training-themes.html">Training</a>
   </nav>
 
   <header>

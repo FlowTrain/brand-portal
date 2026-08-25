@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Flow Train Brand Portal
@@ -14,4 +13,4 @@ Welcome to the official Flow Train brand system. This site is the **single sourc
 - Training slide decks
 - Motion and microsite assets
 
-[Start with Brand Foundations →](brand-foundations.md)
+[Start with Brand Foundations →](./brand-foundations.html)

@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Training Themes
@@ -14,4 +13,4 @@ We provide three brand-consistent decks:
 
 Each deck includes covers, dividers, and diagram templates.
 
-[Next: Downloads →](downloads.md)
+[Next: Downloads →](./downloads.html)

@@ -12,6 +12,9 @@ Use the master logo and approved variations only. Maintain clear space equal to 
 ## Colors
 - Flow Train Blue: `#2BAEE4`
 - Near Black: `#231F20`
+- Dark Purple: '#5A4FCF'(Brand Accent)
+---RGB: 90, 79, 207
+--HSL: 245°, 57%, 56%
 
 ## Typography
 - Headings: Inter Bold

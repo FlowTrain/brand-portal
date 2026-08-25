@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Motion & Visual Language
@@ -11,4 +10,4 @@ Flow Train motion conveys **speed, clarity, and flow**. Use seamless loops with 
 - Splash loops (MP4)
 - Lock-screen animations
 
-[Next: Productivity & Tools →](productivity.md)
+[Next: Productivity & Tools →](./productivity.html)
